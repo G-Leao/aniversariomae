@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parabéns, Aline!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="estrelas" id="estrelas" aria-hidden="true"></div>
+    <div class="baloes" aria-hidden="true">
+      <span class="balao b1"></span>
+      <span class="balao b2"></span>
+      <span class="balao b3"></span>
+      <span class="balao b4"></span>
+      <span class="balao b5"></span>
+    </div>
+    <p class="hero-data">21 de novembro</p>
+    <h1 class="hero-titulo" aria-label="Parabéns, Aline!"><span class="linha" aria-hidden="true">Parabéns,</span><span class="linha" aria-hidden="true">mamãe!</span></h1>
+    <p class="hero-sub">Hoje o dia é inteirinho seu.</p>
+    <div class="contagem" id="contagem" aria-live="off"></div>
+    <a class="hero-seta" href="#carta">Abrir minha carta</a>
+  </header>
+
+  <main>
+
+    <!-- CARTA -->
+    <section class="secao" id="carta">
+      <h2 class="reveal">Tem uma carta pra você</h2>
+      <div class="carta-cena reveal" id="cena">
+        <button class="envelope" id="abrir" type="button" aria-expanded="false" aria-controls="papel">
+          <span class="envelope-aba"></span>
+          <span class="selo" aria-hidden="true">♥</span>
+          <span class="envelope-texto" id="envelope-texto">Toque para abrir</span>
+        </button>
+        <div class="papel" id="papel">
+          <div class="papel-miolo">
+            <div class="papel-texto">
+              <!-- EDITE O TEXTO ABAIXO COM AS SUAS PALAVRAS -->
+              <p style="--i:0">Mãe,</p>
+              <p style="--i:1">Hoje é o seu dia, e eu queria que você sentisse um pouco do tanto que você significa pra mim. Tudo o que eu sou e tudo o que estou construindo passa pelo que você me ensinou.</p>
+              <p style="--i:2">Obrigado por cada conselho, por cada broncão que depois virou lição, e por acreditar em mim mesmo quando eu duvidei. Eu sei que nem sempre falo, mas eu reparo em tudo o que você faz.</p>
+              <p style="--i:3">Que o seu novo ano seja leve, cheio de saúde e de coisas boas, do jeito que você merece.</p>
+              <p class="assinatura" style="--i:4">Com todo o meu amor,<br>Gustavo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOTIVOS -->
+    <section class="secao">
+      <h2 class="reveal">Coisas que eu admiro em você</h2>
+      <ul class="motivos">
+        <!-- TROQUE POR MOTIVOS REAIS -->
+        <li class="reveal" style="--i:0">A sua força quando ninguém está olhando.</li>
+        <li class="reveal" style="--i:1">O jeito como você cuida de todo mundo primeiro.</li>
+        <li class="reveal" style="--i:2">A sua risada, que enche a casa.</li>
+        <li class="reveal" style="--i:3">A sua fé de que tudo vai dar certo.</li>
+      </ul>
+    </section>
+
+    <!-- FOTOS -->
+    <section class="secao">
+      <h2 class="reveal">Nossos momentos</h2>
+      <!-- COLOQUE SUAS FOTOS NA PASTA "fotos" COM ESSES NOMES (OU MUDE OS CAMINHOS) -->
+      <div class="galeria">
+        <figure class="reveal" style="--i:0">
+          <img src="fotos/foto1.jpeg" alt="Foto de Aline e Gustavo" loading="lazy">
+        </figure>
+        <figure class="reveal" style="--i:1">
+          <img src="fotos/foto2.jpeg" alt="Foto de família" loading="lazy">       
+        </figure>
+        <figure class="reveal" style="--i:0">
+          <img src="fotos/foto3.jpeg" alt="Foto de família" loading="lazy">       
+        </figure>
+        <figure class="reveal" style="--i:1">
+          <img src="fotos/foto4.jpeg" alt="Foto de família" loading="lazy">       
+        </figure>
+        <figure class="reveal" style="--i:0">
+          <img src="fotos/foto5.jpeg" alt="Foto de família" loading="lazy">       
+        </figure>
+        <figure class="reveal" style="--i:1">
+          <img src="fotos/foto6.jpeg" alt="Foto de família" loading="lazy">       
+        </figure>
+        <figure class="reveal" style="--i:0">
+          <img src="fotos/foto7.jpeg" alt="Foto de família" loading="lazy">       
+        </figure>
+        
+      </div>
+    </section>
+
+    <!-- SURPRESA (CSS puro: checkbox) -->
+    <section class="secao surpresa reveal">
+      <input type="checkbox" id="surpresa" class="surpresa-check">
+      <label for="surpresa" class="surpresa-botao">Clique aqui, tem mais uma coisa</label>
+      <div class="surpresa-msg">
+        <p>Você é a minha pessoa favorita no mundo.</p>
+        <p>Feliz aniversário, mãe. Eu te amo.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Feito com carinho por Gustavo, pra Aline</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
